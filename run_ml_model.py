@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
-
-import tensorflow as tf  # now import the tensorflow module
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
