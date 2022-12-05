@@ -25,7 +25,7 @@ for feature_name in CATEGORICAL_COLUMNS:
 for feature_name in NUMERIC_COLUMNS:
     feature_columns.append(tf.feature_column.numeric_column(feature_name, dtype=tf.float32))
 
-print(feature_columns)
+printtttttttt(feature_columns)
 
 
 
