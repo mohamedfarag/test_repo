@@ -40,9 +40,7 @@ def make_input_fn(data_df, label_df, num_epochs=10, shuffle=True, batch_size=32)
 
 train_input_fn = make_input_fn(dftrain, y_train)  # here we will call the input_function that was returned to us to get a dataset object we can feed to the model
 eval_input_fn = make_input_fn(dfeval, y_eval, num_epochs=1, shuffle=False)
-printxyz
-
-
+print ("Input and Eval function created")
 linear_est = tf.estimator.LinearClassifier(n_classes = 2, feature_columns=feature_columns)
 # We create a linear estimtor by passing the feature columns we created earlier
 
