@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 print("Getting things back right!!")
+# Update to real URLs for dataset (e.g., KDD Train and Test datasets)
 dftrain = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/train.csv') # training data
 dfeval = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/eval.csv') # testing data
 y_train = dftrain.pop('survived')
 y_eval = dfeval.pop('survived')
-
 
 CATEGORICAL_COLUMNS = ['sex', 'n_siblings_spouses', 'parch', 'class', 'deck',
                        'embark_town', 'alone']
